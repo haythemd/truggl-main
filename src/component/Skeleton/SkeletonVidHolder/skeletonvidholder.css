@@ -1,0 +1,15 @@
+.skeletonVidHolder > span:nth-child(1) >.react-loading-skeleton {
+    background: var(--background-shades-background-400);
+    height: 391px;
+}
+.skeletonVidHolder > span:nth-child(1) >.react-loading-skeleton {
+    background: var(--background-shades-background-400);
+    height: 58px;
+}
+.react-loading-skeleton {
+    border-radius: 16px;
+    background: var(--background-shades-background-400);
+}
+.react-loading-skeleton::after {
+    background: linear-gradient(90deg ,#4F515B00 0% ,#4F515B 50% , #4F515B00 100%);
+}

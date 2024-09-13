@@ -1,0 +1,57 @@
+.backgroundBlur {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: var(--background);
+    opacity: .75;
+    top: 0;
+    left: 0;
+    display: block;
+    z-index: 12;
+    animation: bgReveal 0.5s cubic-bezier(0, 0.33, 0, 1);
+}
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 13;
+    aspect-ratio: 16/9;
+    width: 50%;
+    animation: popupReveal 0.5s cubic-bezier(0, 0.33, 0, 1);
+}
+.modalContainer > button {
+    position: fixed;
+    top: 4rem;
+    right: 4rem;
+    z-index: 13;
+}
+
+@media screen and (max-width : 786px) {
+    .modalContainer > button {
+        top: 2rem;
+        right: 2rem;
+    }
+    .modal {
+        width: 90%;
+    }
+}
+
+@keyframes bgReveal {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: .75;
+    }
+}
+@keyframes popupReveal {
+    0% {
+        opacity: 0;
+        top: 100%;
+    }
+    100% {
+        opacity: 1;
+        top: 50%;
+    }
+}

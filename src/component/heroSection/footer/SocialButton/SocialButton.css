@@ -1,0 +1,50 @@
+.socialbutton{
+    display: flex;
+    border-radius: 40px;
+    border: 1px solid var(--background-shades-background-300);
+    height: 2.5rem;
+    flex-shrink: 0;
+    width: 2.5rem;
+    border-radius: 2.5rem;
+    background: rgba(54, 56, 68, 0.40);
+}
+.socialMediaIcon{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.SocialButtonContainer{
+    margin-top: 2rem;
+    display: flex;
+    gap:2rem;
+}
+
+.socialMediaIcon > svg {
+    width: 20px;
+    height: 20px;
+}
+.socialMediaIcon > svg > path {
+    fill : var(--text-shades-text-600)
+}
+.socialMediaIcon.youtube > svg > path:nth-child(2) , .socialMediaIcon.instagram > svg > path:nth-last-child(3) ,
+.socialMediaIcon.instagram > svg > path:nth-last-child(1)  {
+    fill: #181A28;
+}
+
+div.socialMediaIcon.youtube:hover > svg > path:nth-child(2) {
+    fill: #fff
+}
+div.socialMediaIcon.youtube:hover > svg > path {
+    fill: #FF3D00;
+}
+div.socialMediaIcon.twitter:hover > svg > path {
+    fill: #03A9F4;
+}
+div.socialMediaIcon.linkdin:hover > svg > path {
+    fill: #0288d1;
+}
+div.socialMediaIcon.instagram:hover > svg > g >path{
+    fill: #F50057;
+    
+}

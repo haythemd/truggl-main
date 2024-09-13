@@ -1,0 +1,268 @@
+.whyUsElementContainer{
+    margin-top: 4Rem;
+    margin-bottom: 4rem;
+    display: grid;
+    border-radius: 2rem;
+    border: 1px solid rgba(157, 157, 157, 0.25);
+    background: linear-gradient(90deg, rgba(79, 81, 91, 0.25) 0%, rgba(79, 81, 91, 0.00) 100%);
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    grid-template-columns: 1fr 602px;
+}
+
+.descriptionConatiner > p{
+    color: var(--text-shades-text-600);
+    font-family: 'Franca';
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--line-height-p); 
+    letter-spacing: -0.01rem;
+    margin-top: 0.5rem;
+}
+
+.descriptionConatiner > button{
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    border: 2px solid var(--text-shades-text-600);
+    background-color: var(--background);
+    width:11rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: start !important;
+}
+.descriptionConatiner .btn{
+    display: flex;
+    justify-content: start !important;
+}
+.descriptionConatiner > button > span {
+    color: var(--text-shades-text-600);
+    text-align: center;
+    font-family: 'Franca';
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--line-height-span); 
+    letter-spacing: -0.01rem;
+}
+p{
+    margin: 0;
+}
+.descriptionConatiner > h3{
+    color: var(--text-shades-text-500);
+    font-family: 'Franca';
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: var(--line-height-h3); 
+    letter-spacing: -0.05rem;
+}
+.descriptionConatiner{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 6rem 4rem;
+    max-height: 370px;
+}
+.imgContainer {
+    position: relative;
+    max-width: 602px;
+    width: 100%;
+    max-height: 100%;
+}
+
+.imgContainer > img:nth-child(1) {
+    display: block;
+}
+.imgContainer > img:nth-child(2) {
+    display: none;
+}
+.imgContainer > img {
+    width: 100%;
+    left: 16px;
+    max-height: calc(100% + 16px );
+    position: absolute;
+    top: -16px;
+    height: calc(100% + 16px ) !important;
+}
+.whyusContent{
+    gap: 5rem;
+    display: flex;
+}
+
+@media screen and (max-width : 768px) {
+
+    .descriptionConatiner > h3{
+
+        font-size: 1.875rem;;
+        line-height: var(--line-height-responsive-h3);    }
+    .descriptionConatiner > p{
+        font-size: 0.875rem;
+        line-height: var( --line-height-responsive-footer-p);
+    }
+    .descriptionConatinerSecond > h3{
+        font-size: 1.875rem;;
+        line-height: var(--line-height-responsive-h3);  
+    }
+    .descriptionConatinerSecond > p{
+        font-size: 0.875rem;
+        line-height: var( --line-height-responsive-footer-p);
+
+}
+}
+
+.WhyusSecondElementPrimaryBg{
+    height: 100%;
+    width: 100%;
+    background:  var(--background);
+    display: block;    
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.WhyusSecondElementSecondaryBg {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg ,#686A7333, #686A7300);    
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.WhyusSecondElementtContainer{ 
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+    padding: 3rem 4rem;
+    background: transparent;
+    background-image:linear-gradient( #9D9D9D80, #9D9D9D00) ;
+    background-origin: border-box;
+    border: 1px solid transparent;
+    z-index: -1;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.whyusContentSecond{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    z-index: 3;
+}
+.descriptionConatinerSecond > h3{
+    color: var(--text-shades-text-500);
+    font-family: 'Franca';
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: var(--line-height-h3); 
+    letter-spacing: -0.05rem;
+}
+.descriptionConatinerSecond{
+    display: flex;
+    flex-direction: column;
+}
+.whyusContentSecondimg{
+    margin-top: 2rem;
+    display: flex;
+    border-radius: 2rem;
+    background: transparent;
+    background-image:linear-gradient( #9D9D9D80, #9D9D9D00) ;
+    background-origin: border-box;
+    border: 1px solid transparent;
+    z-index: -1;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.whyusContentSecondimg > img {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    
+    width: 100%;
+    height: 100%;
+}
+.descriptionConatinerSecond > p{
+    color: var(--text-shades-text-600);
+    font-family: 'Franca';
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--line-height-p); 
+    letter-spacing: -0.01rem;
+}
+.whyUsElementContainer > .descriptionConatiner > .btn {
+    justify-content: start;
+}
+
+@media screen and (max-width : 768px){
+    .descriptionConatinerSecond{
+          display: flex;
+          justify-content: center;
+          text-align: center;
+
+    }
+}
+
+
+@media screen and (min-width : 1100px) {
+
+    .imgContainer {
+        min-width: 602px;
+    }
+    .descriptionConatiner {
+        padding-right: 0;
+    }
+}
+@media screen and (max-width : 1100px) {
+    .whyUsElementContainer{
+        display: flex;
+        flex-direction: column;
+    } 
+    .imgContainer {
+        max-width: none;
+    }
+    .imgContainer > img:nth-child(1) {
+        display: none;
+    }
+    .imgContainer > img:nth-child(2) {
+        display: block;
+        width: 100% !important;
+        
+    }
+    .imgContainer > img {
+        left: 0;
+        top: 0;
+        min-width: 1px;
+        width: calc(100% - 128px);
+        position: relative;
+        margin-top: 2rem;
+    }
+    .descriptionConatiner .btn {
+        justify-content: center !important;
+    }
+    .whyUsElementContainer {
+        padding: 4rem;
+        padding-bottom: 0;
+    }
+    .descriptionConatiner {
+        padding: 0;
+    }
+    .descriptionConatiner,.descriptionConatinerSecond {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width : 500px) {
+    .whyUsElementContainer {
+        padding: 1rem;
+        padding-bottom: 0 !important;
+    }
+}

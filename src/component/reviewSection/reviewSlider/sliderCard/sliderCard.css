@@ -1,0 +1,165 @@
+.reviewText{
+    color: var(--text-shades-text-700);
+    font-family: 'Franca';
+    font-size: 1rem;
+    line-height: var( --line-height-p); 
+    letter-spacing: -0.02rem;
+    position: relative;
+    z-index: 3;
+}
+.sliderCardSecondaryBg{
+    height: 100%;
+    width: 100%;
+    background:   linear-gradient(180deg ,#686A7333, #686A7300);    
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.images > img {
+    border-radius: 50%;
+}
+.sliderCardPrimaryBg {
+    height: 100%;
+    width: 100%;
+    background: var(--background);    
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.name{
+    color: var(--text);
+    font-family: 'Franca';
+    font-size: 0.875rem;
+    line-height: 0.875rem; 
+    letter-spacing: -0.0175rem;
+    position: relative;
+    z-index: 10;
+}
+.workPosition{
+    color: var(--text-shades-text-700);
+    font-family: 'Franca';
+    font-size: 0.875rem;
+    line-height: 0.875rem; 
+    letter-spacing: -0.0175rem;
+    margin-top: 0.5rem;
+    position: relative;
+    z-index: 10;
+
+}
+.marque-w:hover .reviewSlider{
+    animation-play-state: paused;
+}
+.workAndName{
+    display: flex;
+    flex-direction: column;
+}
+.images{
+    display: flex;
+}
+.images > .imagecompanyConatiner{
+    position: relative;
+    width: 48px;
+    height: 48px;
+    z-index: -1;
+    border-radius: 3rem;
+    border: 2px solid var(--background);
+    overflow: hidden;
+    background-color: var(--background);
+}
+.images > .imageProfileConatiner {
+    width: 48px;
+    height: 48px;
+    position: relative;
+    left: -25px;
+    border-radius: 3rem;
+    border: 2px solid var(--background);
+    overflow: hidden;
+}
+.underreviewText{
+    display: flex;
+    gap: -2rem;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    
+}
+.sliderCard{ 
+    display: flex;
+    padding: 2rem 3rem;
+    flex-direction: column;
+    border-radius: 1rem;
+    background: transparent;
+    background-image:linear-gradient( #9D9D9D80, #9D9D9D00) ;
+    background-origin: border-box;
+    border: 1px solid transparent;
+    z-index: -1;
+    gap:1.5rem;
+    min-width: 28.5rem;
+    min-height: 18REm; 
+    position: relative;
+    overflow: hidden;
+}
+
+.serviceVid {
+    border-radius: 4rem;
+    background: rgba(104, 106, 115, 0.15);
+    mix-blend-mode: lighten;
+    backdrop-filter: blur(32.5px);
+    width: 30.5rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reviewVidContainer {
+    border-radius: 1rem;
+    border: 1px solid #393A45;
+    background: linear-gradient(0deg, rgba(4, 6, 21, 0.50) 0%, rgba(4, 6, 21, 0.50) 100%), lightgray 50% / cover no-repeat, rgba(104, 106, 115, 0.15);
+    backdrop-filter: blur(32.5px);
+    width: 100%;
+    height: 150px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 3;
+    & .vidHolderBluredBg {
+        background: #000;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 3;
+        display: block;
+    }
+}
+
+.reviewVidContainer:hover > svg:first-child > g > g > path {
+    fill: #B226C5;
+}
+.reviewVidContainer > svg {
+    position: absolute;
+    z-index: 4;
+}
+.reviewVidContainer > img , .reviewVidContainer > div > svg {
+    height: 100%;
+    transition: all 300ms ease-in-out;
+}
+
+
+@media screen and (max-width : 768px) {
+    .reviewText{
+        font-size: 0.875rem;
+        line-height: var(--line-height-responsive-footer-p);
+    }
+}

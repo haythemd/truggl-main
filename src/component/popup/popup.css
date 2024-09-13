@@ -1,0 +1,140 @@
+.bluredBG {
+    background: rgba(4, 6, 21, 0.75);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    animation: bgReveal 0.5s cubic-bezier(0, 0.33, 0, 1);
+}
+.popupContainer > div {
+    display: flex;
+    border-radius: 2rem;
+    background: linear-gradient(180deg, rgba(79, 81, 91, 0.25) 0%, rgba(79, 81, 91, 0.00) 100%), #040615;
+    box-shadow: 0px 4px 150px 8px rgba(104, 106, 115, 0.25);
+    max-width: 920px;
+    overflow: hidden;
+    animation: popupReveal 0.5s cubic-bezier(0, 0.33, 0, 1);
+}
+.popupContainer > div > div {
+    height: 516px;
+}
+.popupContainer {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.popupContent {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 554px;
+    justify-content: center;
+
+}
+.popupContent > .popupBtn > button.linearBtn > .primaryBG {
+    background: var(--background);
+
+}
+.popupContent > .popupBtn > button.linearBtn > .btnValue {
+    padding: .75rem !important;
+}
+
+.popupContent > h3 {
+    color: var(--text);
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+    letter-spacing: -0.05rem;
+}
+.popupContent > span:nth-child(2) {
+    color: var(--text-shades-text-600);
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.5rem;
+    letter-spacing: -0.01rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.popupBtn {
+    position: relative;
+}
+.popupBtn > button {
+    width: 100%;
+    cursor: pointer;
+}
+.popupContent > button {
+    color: var(--text-shades-text-700);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: -0.16px;
+    border: none;
+    background: transparent;
+    text-decoration: underline dashed;
+    text-underline-position: under;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+.popupContent > .linearBtn > button{
+    display: none;
+}
+
+@keyframes bgReveal {
+    0% {
+        opacity: 0;
+        backdrop-filter: blur(0px);
+    }
+    100% {
+        opacity: .75;
+        backdrop-filter: blur(4px);
+    }
+}
+@keyframes popupReveal {
+    0% {
+        opacity: 0;
+        scale: 0.5;
+    }
+    100% {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .popupContainer > div > div > svg {
+        display: none;
+    }
+}
+@media screen and (max-width: 575px) {
+    .popupContainer > div > div {
+        height: auto;
+    }
+    .popupContainer > div {
+        width: 90%;
+    }
+    .popupContent {
+        padding: 3rem 1rem;
+    }
+    .popupContent > button {
+        font-size: 14px;
+        max-width: 60%;
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+    .popupContent > .linearBtn > button{
+        display: block;
+        
+    }
+}

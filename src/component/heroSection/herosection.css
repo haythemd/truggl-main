@@ -1,0 +1,94 @@
+section.heroSection {
+    margin-top: 4rem !important;
+}
+.mainTitle {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    animation: heroTitleReveal 1.5s cubic-bezier(0, 0.42, 0.17, 0.99);
+}
+.mainTitle > h1 {
+    text-align: center;
+    font-weight: 700;
+    line-height: var( --line-height-h1);
+    letter-spacing: -0.04125rem;
+    color: var(--text);
+    margin-bottom: 1rem;
+}
+.mainTitle > h1 > span {
+    background: linear-gradient(180deg, #B226C5 0%, #7E41DA 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.mainTitle > h4 {
+    color: var(--text-shades-text-600, #B7BAC8);
+    text-align: center;
+    font-family: "Franca Book";
+    font-weight: 400;
+    line-height: var( --line-height-h4);
+    font-size: 1.5rem;
+    letter-spacing: -0.015rem;
+}
+.gridBoxes {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.gridBoxes > svg {
+    width: 100% !important;
+}
+@media screen and (max-width : 1500px) {
+    section.heroSection {
+        margin: 0 6rem;
+    }
+}
+@media screen and (max-width : 1100px) {
+    section.heroSection {
+        margin: 0 2rem;
+        margin-top: 11.5rem !important;
+    }
+    .vidContainer {
+        margin: 0;
+    }
+    .heroBtn {
+        margin-bottom: 3rem;
+    }
+}
+@media screen and (max-width : 768px) {
+    section.heroSection > .vidContainer {
+        padding: 0;
+    }
+    .mainTitle > h4 {
+        font-size: 1.125rem;
+        line-height: var(--line-height-reponsive-h4);
+    }
+    h2 > hr {
+        margin-top: 2rem;
+    }
+}
+@media screen and (max-width : 560px) {
+    .heroBtn {
+        flex-direction: column;
+    }
+    .linearBtn > button > .btnValue > a {
+        padding: 0 0.5rem !important;
+        text-align: center;
+    }
+    .heroBtn > .navBtn , .heroBtn > .navBtn > button {
+        width: 100%;
+    }
+}
+
+
+@keyframes heroTitleReveal {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

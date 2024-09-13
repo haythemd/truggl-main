@@ -1,0 +1,97 @@
+.contact-container {
+    z-index: 5;
+    cursor: pointer;
+    box-shadow: 0 0 20px 0 rgba(229, 232, 250, 0.5);
+    border: 2px solid #fcf9f9;
+    width: 60px;
+    height: 60px;
+    display: block;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 50px;
+    right: 65px;
+    background: #18b806;
+    transition: all 300ms ease-out;
+
+    & .contact-list {
+        position: absolute;
+        transform: translatey(-56px);
+        z-index: 4;
+
+        &>a {
+            position: absolute;
+            transform: translate(3px, 3px);
+            transition: transform 300ms ease-out;
+            box-shadow: 0 0 10px 0 rgba(229, 232, 250, 0.75);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+        }
+
+    }
+}
+
+.contact-icon:has(input:checked)+.contact-list {
+    &>a:nth-child(1) {
+        transform: translate(3px, -69px);
+    }
+
+    &>a:nth-child(2) {
+        transform: translate(3px, -135px);
+    }
+
+    &>a:nth-child(3) {
+        transform: translate(3px, -201px);
+    }
+
+    &>a:nth-child(4) {
+        transform: translate(3px, -267px);
+    }
+}
+.contact-icon:has(input:checked) {
+    background: #18b806;
+    transition: background 700ms ease-out;
+    & div:has(svg) {
+        opacity: 1;
+    }
+}
+
+.contact-icon {
+    background-image: url("/assets/people/ahmed-yassine.png");
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border-radius: 50%;
+    position: relative;
+    z-index: 5;
+    justify-content: center;
+    align-items: center;
+    
+
+    & input {
+        width: 0;
+        height: 0;
+        visibility: hidden;
+        position: absolute;
+    }
+    & div:has(svg) {
+        background: white;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        transition: opacity 300ms ease-out;
+        opacity: 0;
+    }
+}
+
+.contact-container:hover {
+    box-shadow: 0 0 10px 0 rgba(229, 232, 250, 0.75);
+}

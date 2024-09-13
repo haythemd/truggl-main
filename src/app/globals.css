@@ -1,0 +1,331 @@
+:root {
+    /*fonts sizes*/
+    --font-l : 16px ;
+    --font-mid : 14px ;
+    --font-s : 12px ;
+
+    /*color*/
+   --line-height-h1:  4.95rem;
+   --line-height-h4: 1.95rem;
+   --line-height-h2: 3.98125rem;
+   --line-height-h3: 3.25rem; 
+   --line-height-p:1.5rem ;
+   --line-height-service-h4:1.75rem;
+   --line-height-span:1.3rem ;
+   --line-height-label:1rem;
+   --line-height-responsive-h1:  3.6rem;
+   --line-height-responsive-h4:  1.4625rem;
+   --line-height-responsive-h2: 3.25rem;
+   --line-height-responsive-h3:  2.4375rem; 
+   --line-height-responsive-p:1.5rem ;
+   --line-height-responsive-service-h4: 1.875rem;
+   --line-height-responsive-span:1.3rem ;
+   --line-height-responsive-label:1rem;
+   --line-height-responsive-footer-p: 1.3125rem;
+    --primary: #495cef;
+	--accent: #b226c5;
+	--text: #e5e8fa;
+	--background: #040615;
+	--primary-shades-primary-100: #c8cefa;
+	--primary-shades-primary-200: #a4aef7;
+	--primary-shades-primary-300: #929df5;
+	--primary-shades-primary-400: #6d7df2;
+	--primary-shades-primary-500: #495cef;
+	--primary-shades-primary-600: #3a4abf;
+	--primary-shades-primary-700: #2c378f;
+	--primary-shades-primary-800: #1d2560;
+	--primary-shades-primary-900: #0f1230;
+	--accent-shades-accent-100: #f0d4f3;
+	--accent-shades-accent-200: #e0a8e8;
+	--accent-shades-accent-300: #d17ddc;
+	--accent-shades-accent-400: #c151d1;
+	--accent-shades-accent-500: #b226c5;
+	--accent-shades-accent-600: #8e1e9e;
+	--accent-shades-accent-700: #6b1776;
+	--accent-shades-accent-800: #470f4f;
+	--accent-shades-accent-900: #240827;
+	--text-shades-text-500: #e5e8fa;
+	--text-shades-text-600: #b7bac8;
+	--text-shades-text-700: #898b96;
+	--text-shades-text-800: #5c5d64;
+	--text-shades-text-900: #2e2e32;
+	--background-shades-background-500: #040615;
+	--background-shades-background-400: #1d1f2c;
+	--background-shades-background-300: #363844;
+	--background-shades-background-200: #4f515b;
+	--background-shades-background-100: #686a73;
+    --semantic-danger-danger-400 : #FB7271;
+}
+
+.rectangleDiv {
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+    position: relative;
+    box-shadow: 2px 0px 60px rgba(34, 34, 255, 0.3);
+    border-radius: 32px 0px 0px 32px;
+    background: linear-gradient(180deg, rgba(91, 114, 232, 0.25), rgba(8, 3, 63, 0));
+    border-top: 2px solid #4155f1;
+    border-bottom: 1px solid #4155f1;
+    border-left: 2px solid #4155f1;
+    box-sizing: border-box;
+    height: 884px;
+}
+
+.bigContainer {
+        padding-left: 20px;
+        padding-top: 20px;
+        width: 100%;
+        position: relative;
+        border-radius: 32px;
+        background: linear-gradient(135.37deg, #1f212f, #131524), rgba(79, 81, 91, 0.1);
+        border: 1px solid rgba(157, 157, 157, 0.25);
+        box-sizing: border-box;
+        height: 1009px;
+}
+
+
+.sliderDiv
+{
+    width: 100%;
+    position: relative;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25) inset;
+    border-radius: 8px 8px 0px 0px;
+    background: linear-gradient(91.02deg, rgba(91, 114, 232, 0), rgba(91, 114, 232, 0.08));
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+    border-right: 1px solid rgba(255, 255, 255, 0.14);
+    border-left: 1px solid rgba(255, 255, 255, 0.14);
+    box-sizing: border-box;
+    height: 71px;
+}
+
+
+.div {
+    position: relative;
+    letter-spacing: -0.01em;
+    line-height: 10px;
+    font-weight: 500;
+}
+.perVideo {
+    position: relative;
+    font-size: 14px;
+    letter-spacing: 0.01em;
+    line-height: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #fff;
+}
+.navbarElement {
+    position: relative;
+    height: 30px;
+    border-radius: 32px;
+    background-color: rgba(54, 56, 68, 0.34);
+    border: 2px solid rgba(104, 106, 115, 0.24);
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 9px;
+    gap: 4px;
+    text-align: center;
+    font-size: 27px;
+    color: #b226c5;
+    font-family: Franca;
+}
+.row{
+    display: flex;
+    flexDirection:"row";
+    justifyContent:"space-evenly";
+}
+
+h1,h2,h3,h4 {
+    font-weight: bold;
+    margin: 0;
+}
+h1 {
+    font-size: 66px;
+}
+h2 {
+    font-size: 49px;
+}
+h3 {
+    font-size: 40px;
+}
+
+* , *::before , *::after {
+    box-sizing: border-box;
+
+}
+* {
+    scroll-behavior: smooth;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    transition: background 300ms;
+}
+main {
+    font-size: 1rem;
+}
+section ,nav{
+    margin: 0 12rem;
+    margin-top: 10rem !important;
+}
+section > div.sectionTitle.titleOnly {
+    margin: 0 12rem;
+}
+@media screen and (max-width :1366px) {
+    main {
+        font-size: var(--font-mid);
+    }
+}
+@media screen and (max-width :768px) {
+    main {
+        font-size: var(--font-s);
+    }
+}
+@font-face {
+    font-family: 'Franca';
+    src: url('../../public/assets/fonts/Franca-Medium.eot');
+    src: local('Franca Medium'), local('../../public/assets/fonts/Franca-Medium'),
+        url('../../public/assets/fonts/Franca-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../../public/assets/fonts/Franca-Medium.woff2') format('woff2'),
+        url('../../public/assets/fonts/Franca-Medium.woff') format('woff'),
+        url('../../public/assets/fonts/Franca-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Franca';
+    src: url('../../public/assets/fonts/Franca-SemiBold.eot');
+    src: local('Franca SemiBold'), local('../../public/assets/fonts/Franca-SemiBold'),
+        url('../../public/assets/fonts/Franca-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../../public/assets/fonts/Franca-SemiBold.woff') format('woff'),
+        url('../../public/assets/fonts/Franca-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Franca Book';
+    src: url('../../public/assets/fonts/Franca-Book.eot');
+    src: local('Franca Book'), local('../../public/assets/fonts/Franca-Book'),
+        url('../../public/assets/fonts/Franca-Book.eot?#iefix') format('embedded-opentype'),
+        url('../../public/assets/fonts/Franca-Book.woff') format('woff'),
+        url('../../public/assets/fonts/Franca-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Franca Book';
+    src: url('../../public/assets/fonts/Franca-Bold.eot');
+    src: local('Franca Bold'), local('../../public/assets/fonts/Franca-Bold'),
+        url('../../public/assets/fonts/Franca-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../../public/assets/fonts/Franca-Bold.woff') format('woff'),
+        url('../../public/assets/fonts/Franca-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Franca';
+    src: url('../../public/assets/fonts/Franca-ExtraBold.eot');
+    src: local('Franca ExtraBold'), local('../../public/assets/fonts/Franca-ExtraBold'),
+        url('../../public/assets/fonts/Franca-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../../public/assets/fonts/Franca-ExtraBold.woff') format('woff'),
+        url('../../public/assets/fonts/Franca-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+body {
+    background: #040615;
+    margin: 0;
+    padding: 0;
+    font-family: "Franca";
+    overflow-x: hidden;
+
+}
+@media screen and (max-width : 1500px) {
+    section:not(section.reviewSection, section.heroSection) {
+        margin: 0 6rem !important;
+        margin-top: 7.5rem !important;
+    }
+    nav {
+        padding: 2rem 6rem !important
+    }
+}
+@media screen and (max-width : 1366px ) {
+    h1 {
+        font-size: 56px !important ;
+    }
+    h2 {
+        font-size: 42px !important;
+    }
+    h3 {
+        font-size: 34px !important;
+    }
+}
+
+@media screen and (max-width : 1100px) {
+    section:not(section.reviewSection , section.heroSection){
+        margin: 0 2rem !important;
+        margin-top: 11.5rem !important;
+    }
+    section > .sectionTitle {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .sectionTitle.titleOnly {
+        margin: 0 2rem !important;
+    } 
+    nav {
+        padding: 2rem 2rem !important;
+    }
+
+}
+@media screen and (max-width : 768px) {
+    h1 {
+        font-size: 48px !important;
+        line-height: 57.6px !important;
+    }
+    h2 {
+        font-size: 40px !important;
+        line-height: 52px !important;
+    }
+    h3 {
+        font-size: 30px !important;
+    }
+
+}
+@media screen and (max-width : 375px) {
+    h1 {
+        font-size: 40px !important;
+        line-height: 40.3px !important;;
+    }
+    h2 {
+        font-size: 30px !important;
+        line-height: 38px !important;
+    }
+    h3 {
+        font-size: 24px !important;
+    }
+
+}
+
+/*.mastra1 , .mastra2 {
+    width: 100%;
+    height: 1px;
+    background: red;
+    display: block;
+    position: absolute;
+    rotate: 90deg;
+}*/

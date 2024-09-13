@@ -1,0 +1,100 @@
+.descriptionSection{
+    color: var(--text-shades-text-500);
+    font-family: 'Franca';
+    line-height: var( --line-height-h2); 
+    letter-spacing: -0.03063rem;
+    margin-top: 12rem;
+}
+ hr{
+    margin-top: 4Rem;
+    width: 100%;
+    border-color: var(--background-shades-background-300);
+    border-width: 2px 0 0 0;
+    border-style: solid;   
+ }
+ .descriptionSection > h2{
+    margin: 0;
+    font-weight: 600;
+ }
+.underdescriptionSection{
+    color: var(--text-shades-text-600);
+    font-family: 'Franca';
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: var( --line-height-p); 
+    letter-spacing: -0.01rem;
+    max-width: 42.5625rem;
+}
+.descriptionSection > h2 > mark{
+    margin-left: 8px;
+    margin-right: 5px;
+    position: relative;
+    color: var(--text-shades-text-500);
+}
+div.descriptionSection > h2 > mark:nth-child(2) {
+    background: linear-gradient(90deg, #495CEF40 0%, rgba(73, 92, 239, 0.125) 100%);
+}
+div.descriptionSection > h2 > mark:nth-child(4) {
+    background: linear-gradient(90deg, #B226C540 0%, rgba(178, 38, 197, 0.125) 100%);
+}
+div.descriptionSection > h2 > mark:nth-child(2)::before {
+    content: "";
+    display: block;
+    height: 68px;
+    width: 5px;
+    position: absolute;
+    top: -5px;
+    left: -5px; 
+    background-color: var(--primary);
+    border-radius: 5px 5px 0px 0px;
+    z-index: 2;
+}
+div.descriptionSection > h2 > mark:nth-child(4)::before {
+    content: "";
+    display: block;
+    height: 68px;
+    width: 5px;
+    position: absolute;
+    top: -5px;
+    left: -5px; 
+    background-color: var(--accent);
+    border-radius: 5px 5px 0px 0px;
+    z-index: 2;
+    opacity: 1;  
+}
+@media screen and (max-width : 1100px) {
+    div.descriptionSection > h2 > mark:nth-child(4)::before , div.descriptionSection > h2 > mark:nth-child(2)::before {
+        height: 56px;
+    }
+    .descriptionSection > h2 {
+        font-size: 2.5rem;
+        line-height: var(--line-height-responsive-h2);
+    }
+    .descriptionSection {
+        margin-top: 6rem;
+    }
+    div.descriptionSection > h2 > mark:nth-child(4)::before{
+        position: absolute;
+        top: -7px;
+        height: 60px;
+    }
+    div.descriptionSection > h2 > mark:nth-child(2)::before{
+        position: absolute;
+        top: -7px;
+        height: 60px;
+    }
+}
+@media screen and (max-width : 1240px) {
+
+    div.descriptionSection > h2 > mark:nth-child(4)::before{
+        position: absolute;
+        top: -7px;
+        height: 60px;
+    }
+    div.descriptionSection > h2 > mark:nth-child(2)::before{
+        position: absolute;
+        top: -7px;
+        height: 60px;
+    }
+}

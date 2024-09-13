@@ -1,0 +1,288 @@
+.serviceContent {
+    position: relative;
+    margin-top: 8rem;
+}
+.serviceList > ul > li {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 3rem 4rem;
+    position: relative;
+    transition: all 300ms;
+    cursor: pointer;
+    
+}
+
+.serviceList > ul > li > span:nth-child(2) {
+    color: var(--text);
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: var( --line-height-service-h4);
+    letter-spacing: -0.0175rem;
+}
+.serviceList > ul > li > span:nth-child(3) {
+    color: var(--text-shades-text-700);
+    font-weight: 500;
+    line-height: var(--line-height-span);
+    letter-spacing: -0.01rem;
+    max-width: 34rem;
+}
+.serviceList > ul > li > .indicator {
+    position: absolute;
+    left: -55px;
+    top: -35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.serviceList > ul > li > .indicator > hr {
+    transform: rotate(90deg);
+    height: 100%;
+    width: 110px;
+    position: relative;
+}
+.serviceList > ul > li > .indicator > span {
+    color: var(--text);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    line-height: var(--line-height-label);
+    letter-spacing: 0.02rem;
+    border-radius: 5.625rem;
+    border: 1px solid var(--background-shades-background-300);
+    width: 41px;
+    height: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(28px);
+    margin: 18px 0;
+}
+.serviceList > ul > li:first-child > .indicator:before {
+    content: "";
+    width: 10px;
+    height:110px ;
+    position: absolute;
+    top: 10px;
+    left: 46px;
+    background: linear-gradient(#040615 0% , #04061500 100%);
+    z-index: 3;
+
+}
+.serviceList > ul > li:last-child > .indicator::before {
+    content: "";
+    width: 10px;
+    height:110px ;
+    position: absolute;
+    top: 161px;
+    left: 46px;
+    background: linear-gradient(#04061500 0% , #040615 100%);
+    z-index: 3;
+
+}
+.serviceList > ul > li:first-child:has( + li.selected) > .indicator:after {
+    content: "";
+    width: 10px;
+    height:110px ;
+    position: absolute;
+    top: 10px;
+    left: 54px;
+    background: linear-gradient(#040615 0% , #04061500 100%);
+    z-index: 3;
+
+}
+.serviceVid {
+    border-radius: 4rem;
+    background: rgba(104, 106, 115, 0.15);
+    backdrop-filter: blur(32.5px);
+    width: 30.5rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.serviceVidContainer {
+    border-radius: 4rem;
+    border: 2px solid rgba(229, 232, 250, 0.25);
+    background: linear-gradient(0deg, rgba(4, 6, 21, 0.50) 0%, rgba(4, 6, 21, 0.50) 100%), lightgray 50% / cover no-repeat, rgba(104, 106, 115, 0.15);
+    backdrop-filter: blur(32.5px);
+    width: 33.5rem;
+    height: calc(100% - 6rem);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.serviceVidContainer:hover > svg:first-child > g > g > path {
+    fill: #B226C5;
+}
+.serviceVidContainer > svg {
+    position: absolute;
+    z-index: 4;
+}
+.serviceVidContainer > img , .serviceVidContainer > div > svg {
+    height: 100%;
+    transition: all 300ms ease-in-out;
+}
+.vidIndicator > span {
+    width: 0.75rem;
+    height: 0.75rem;
+    background: rgba(229, 232, 250, 0.75);
+    border-radius: 1rem;
+    content: "";
+    display: block;
+}
+.vidIndicator {
+    position: absolute;
+    top: 1.25rem;
+    display: flex;
+    gap: 0.5rem;
+
+}
+li > .serviceVid {
+    display: none;
+}
+section.serviceSection > .btn > a {
+    display: none;
+
+}
+.modal > div:has( > svg) {
+    display: flex;
+    justify-content: center;
+}
+.modal > div > svg {
+    max-width: 750px;
+}
+
+@media screen and (min-width : 1100px) {
+    .serviceList > ul > li.selected  > .indicator > span{
+        background: var(--primary);
+        border: none;
+    }
+    .serviceList > ul > li.selected {
+        background: linear-gradient(180deg, rgba(79, 81, 91, 0.25) 0%, rgba(79, 81, 91, 0.00) 100%);
+    }
+    
+    .serviceList > ul > li.selected  > .indicator > hr:first-child{
+        border-color: var(--primary);
+    }
+    .serviceList > ul > li:has(+ li.selected) > .indicator::before {
+        content: "";
+        width: 2px;
+        height: 110px;
+        position: absolute;
+        top: 161px;
+        left: 54px;
+        background: linear-gradient(#363844 0% , #495CEF 100%);
+        z-index: 3;
+    }
+    .serviceList > ul > li:hover{
+        background: linear-gradient(180deg, rgba(79, 81, 91, 0.1) 0%, rgba(79, 81, 91, 0.00) 100%);
+        padding-left: 5rem;
+        padding-right: 3rem;
+    }
+    .serviceList > ul > li.selected:hover{
+        background: linear-gradient(180deg, rgba(79, 81, 91, 0.35) 0%, rgba(79, 81, 91, 0.1) 100%);
+        padding-left: 5rem;
+        padding-right: 3rem;
+    }
+}
+@media screen and (min-width : 1350px) {
+    .serviceList > ul > li{
+        width: 90%;
+    }
+    .serviceVidContainer > div > svg {
+        width: 109% !important;
+        height: 100%;
+    }
+}
+@media screen and (max-width : 1350px) {
+    .serviceContent {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .serviceContent > .serviceVid {
+        position: relative;
+        height: auto;
+        height: 450px;
+    }
+    .serviceContent > .serviceVid > .serviceVidContainer {
+        width: 110%;
+    }
+}
+@media screen and (max-width : 1100px) {
+    .serviceList > ul > li {
+        text-align: center;
+        padding: 0 4rem;
+        max-width: 595px;
+    }
+    li > .indicator {
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+    }
+    li > .indicator::before {
+        content: "";
+        width: 100% !important;
+        height: 110px;
+        position: absolute;
+        top: 10px !important;
+        left: 0px !important;
+        background: linear-gradient(#040615 0% , #04061500 100%) !important;
+        z-index: 3;
+    }
+    li > .indicator > hr:nth-child(3) {
+        display: none;
+    }
+    li > .indicator > hr {
+        transform: translateY(-26px) rotate(90deg);
+    }
+    .serviceVid {
+        display: none;
+    }
+    li > .serviceVid {
+        display: block;
+        position: relative;
+        width: 100%;
+        min-height: 295px;
+        border-radius: 1rem;
+        margin-top: 2rem;
+    }
+    li > .serviceVid > .serviceVidContainer {
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem;
+    }
+    li > .serviceVid > .serviceVidContainer > svg {
+        width: 102px;
+    }
+
+    li > .serviceVid > .vidIndicator {
+        display: none;
+    }
+    section.serviceSection > .btn {
+        justify-content: center;
+        display: flex;
+    }
+    section.serviceSection > .btn > a {
+        margin-top: 3rem;
+    }
+    section.serviceSection > .sectionTitle > .sectionTitleBtn > .btn > a {
+        display: none;
+    }
+    section.serviceSection > .btn > a {
+        display: block;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width : 786px) {
+    .serviceList > ul > li {
+        padding: 0;
+    }
+}

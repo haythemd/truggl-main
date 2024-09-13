@@ -1,0 +1,28 @@
+.doubleWhyus{
+    display: flex;
+    gap: 2rem ;
+}
+@media screen and (max-width : 1350px) {
+    section.whyus > .doubleWhyus {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width : 1100px) {
+    .Whyus{
+        display: flex;
+        flex-direction: column;
+    }
+    .doubleWhyus{
+        display: flex;
+        flex-direction: column;
+    }
+    .doubleWhyus .WhyusSecondElementtContainer{
+        margin-top: 4rem !important;
+    }
+}
+@media screen and (max-width : 500px) {
+    .Whyus .WhyusSecondElementtContainer{
+        text-align: center;
+        padding: 1rem !important;
+    }
+}

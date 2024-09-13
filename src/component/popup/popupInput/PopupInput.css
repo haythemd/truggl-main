@@ -1,0 +1,64 @@
+.inputContainer {
+    background: transparent;
+    background-image:linear-gradient(135deg, #B226C5, #495CEF);
+    background-origin: border-box;
+    border: 2px solid transparent;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    font-family: "Franca";
+    padding: 12px;
+    padding-left: 2rem;
+}
+.inputContainer::before {
+    width: 100%;
+    height: 100%;
+    background: #0D0F20;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: all 300ms ease-out;
+}
+.inputContainer > input{
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    top: 0;
+    left: 0;
+    border: none;
+    color: var(--text-shades-text-600);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: -0.16px;
+    padding-left: 2rem;
+}
+.inputContainer > .bookingBtn {
+    display: flex;
+    justify-content: end;
+}
+.inputContainer > .bookingBtn > .linearBtn > .boxShadow {
+    z-index: 4;
+    max-width: 156.27px;
+    max-height: 58px;
+}
+.inputContainer > .bookingBtn > .linearBtn > button {
+    z-index: 4;
+    cursor: pointer;
+}
+.inputContainer > .bookingBtn > .linearBtn > button > .primaryBG {
+    opacity: 0;
+}
+@media screen and (max-width: 575px) {
+    .inputContainer > .bookingBtn > .linearBtn > button{
+        display: none !important;
+    }
+    .inputContainer{
+        padding: 2rem;
+        margin-bottom: 1rem;
+    }
+}

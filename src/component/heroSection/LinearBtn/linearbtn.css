@@ -1,0 +1,50 @@
+.boxShadow {
+    background: linear-gradient(135deg, rgba(178, 38, 197, 0.75) 0%, rgba(73, 92, 239, 0.75) 100%);
+    filter: blur(16px);
+    position: absolute;
+    height: 100%;
+    width: 100%
+}
+.linearBtn {
+    position: relative;
+}
+.linearBtn > a , .linearBtn > button {
+    background: transparent;
+    background-image:linear-gradient(135deg, #B226C5, #495CEF);
+    background-origin: border-box;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    font-size: 1rem;
+    font-family: "Franca";
+    height: 100%;
+    min-height: 52px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    z-index: 5;
+}
+.linearBtn > a:hover > .primaryBG , .linearBtn > button:hover > .primaryBG {
+    opacity: 0;
+}
+.linearBtn > a > .primaryBG , .linearBtn > button > .primaryBG {
+    width: 100%;
+    height: 100%;
+    background: #2F1E44;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: all 300ms ease-out;
+}
+.linearBtn > a > .btnValue , .linearBtn > button > .btnValue {
+    position: relative;
+    z-index: 3;
+    color: #E1E1E1;
+    font-weight: 600;
+    padding: calc( 1rem - 2px) 2rem;
+    text-align: center;
+}
+

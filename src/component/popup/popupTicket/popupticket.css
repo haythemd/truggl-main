@@ -1,0 +1,45 @@
+.popupticket {
+    position: fixed;
+    left: 2rem;
+    bottom: 0;
+    padding: 1rem;
+    background: rgba(229, 232, 250, 0.80);
+    cursor: pointer;
+    z-index: 10;
+    border: none;
+    animation:ticketAppeare 300ms ease-in ;
+    border-radius: 8px 8px 0px 0px;
+    backdrop-filter: blur(4px);
+}
+.popupticket > span {
+    color: var(--background);
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.5rem;
+    letter-spacing: -0.01rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+@media screen and (min-width : 1100px) {
+    .popupticket {
+
+    }
+}
+
+@media screen and (max-width : 1100px) {
+    .popupticket {
+        rotate: 90deg;
+        left: -69px;
+        bottom: 6rem;
+        max-height: 56px;
+    }
+}
+
+@keyframes ticketAppeare {
+    0% {
+        transform: translateY(56px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

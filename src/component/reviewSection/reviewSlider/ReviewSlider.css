@@ -1,0 +1,80 @@
+.marque-w{
+    margin-top: 4REM;
+    display: flex;
+    gap: 1REm;
+    align-items: center;
+    justify-content: center;
+    max-width: 100VW;
+    overflow: hidden;
+    position: relative;
+}
+.reviewSlider{
+    padding-left: 1rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    animation:slide 20s linear infinite;
+}
+@keyframes slide {
+    0%{
+        transform: translatex(0);
+    }
+    100%{
+        transform: translatex(101%);
+    }
+}
+.marque-w::before{
+   width: 25%;
+   height:  100%;
+    position: absolute;
+    background: linear-gradient(90deg,  #040615 0%,  rgba(4, 6, 21, 0.00)100%);
+    display: block;
+    content: "";
+    z-index: 1;
+    left: 0;
+    flex-shrink: 0;
+}
+.reviewSection .sectionTitle {
+    margin: 0 12rem;
+}
+.titleOnly {
+    justify-content: center !important;
+    text-align: center;
+}
+.trustPilot {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    align-items: end;
+    color: var(--text);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px; /* 100% */
+    letter-spacing: -0.24px;
+    margin-top: 2rem;
+}
+.trustPilot:hover {
+    opacity: .5;
+}
+.trustPilot > span {
+    color: var(--text-shades-text-600);
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: -0.24px;
+}
+.marque-w::after{
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(90deg, rgba(4, 6, 21, 0.00)  0%,  #040615 100%);
+    display: block;
+    content: "";
+    z-index: 1;
+    flex-shrink: 0;
+    right: 0;
+}
+section.reviewSection {
+    margin: 0;
+}

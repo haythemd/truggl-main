@@ -1,0 +1,72 @@
+section.form-link-section {
+  border-radius: 16px;
+  border: 1px solid rgba(157, 157, 157, 0.5);
+  background: linear-gradient(180deg,
+      rgba(104, 106, 115, 0.2) 0%,
+      rgba(104, 106, 115, 0) 100%),
+    #040615;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 4rem 64px;
+  position: relative;
+}
+
+section.form-link-section>div:nth-last-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+section.form-link-section h2 {
+  color: var(--text-shades-text-500, #e5e8fa);
+  font-weight: 600;
+  letter-spacing: -1.24px;
+  text-align: center;
+  width: 100%;
+}
+
+section.form-link-section p {
+  color: var(--text-shades-text-600);
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.24px;
+  max-width: 526px;
+}
+
+section.form-link-section .formlink-btn {
+  margin-top: 2rem;
+  display: flex;
+  gap: 24px;
+}
+
+.formglowlink>img {
+  position: absolute;
+  filter: blur(175px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 768px) {
+  section.form-link-section {
+    padding: 2rem;
+  }
+
+  .formlink-btn {
+    flex-direction: column;
+  }
+
+  .formglowlink {
+    overflow-x: hidden;
+    position: absolute;
+    width: calc(4rem + 100% + 2px);
+    height: 1500px;
+    z-index: -1;
+  }
+}
